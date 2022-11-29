@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
+import Counter from './pages/Counter';
+import LongForm from './pages/LongForm';
+import Parent from './pages/Parent';
+
+export const CounterContext = createContext();
 
 function App() {
+  const [count, setCount] = useState(0);
+  const value = { count, setCount };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CounterContext.Provider value={value}>
+      <div className="App">
+        {/* <Parent /> */}
+        {/* <Counter /> */}
+        <LongForm />
+      </div>
+    </CounterContext.Provider>
   );
 }
 

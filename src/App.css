@@ -2,37 +2,182 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
+}
+
+.flex-column {
   flex-direction: column;
+}
+
+.items-center {
   align-items: center;
+}
+
+.justify-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.parent-wrapper {
+  border: 1px solid;
+}
+
+.child {
+  border: 1px solid;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+.counter {
+  border: 1px solid;
+  padding: 10px 20px;
+}
+
+.long_form {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+h4 {
+  text-align: left;
+  font-weight: 400;
+  line-height: 0;
+}
+
+.form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  width: 100%;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+.firstName-field {
+  /* margin-right: 20px; */
+}
+
+.lastName-field {
+  /* margin-left: 20px; */
+}
+
+.firstName-field input,
+.lastName-field input,
+.email-field input,
+.education-area select {
+  width: 300px;
+  height: 35px;
+  padding-left: 5px;
+  /* outline: none; */
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.firstName-field input:focus,
+.lastName-field input:focus,
+.email-field input:focus,
+.education-area select:focus,
+.feedback-area textarea:focus {
+  outline: 2px solid #2a6bf7;
+}
+
+.firstName-field label,
+.lastName-field label,
+.email-field label,
+.education-area label,
+.feedback-area label {
+  text-align: left;
+}
+
+.email-gender-field {
+  margin-top: 15px;
+}
+
+.gender-field {
+  margin-left: 45px;
+  margin-top: -10px;
+}
+
+.gender-field input {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.gender-field-wrapper > div {
+  margin-right: 8px;
+}
+
+.education-area {
+  margin-top: 15px;
+}
+
+.pc-count {
+  margin-top: -10px;
+}
+
+.pc-count > h4 {
+}
+
+.pc-count > div {
+  width: 300px;
+  height: 35px;
+}
+
+.pc-count button {
+  width: 40px;
+  border: none;
+  border-radius: 5px;
   color: white;
+  background-color: #2a6bf7;
 }
 
-.App-link {
-  color: #61dafb;
+.pc-number {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feedback-area {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.feedback-area textarea {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.submit-area {
+  margin-top: 15px;
+}
+
+.submit-area button {
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #2a6bf7;
+}
+
+.disable-btn {
+  background-color: gray !important;
+  cursor: not-allowed;
 }
